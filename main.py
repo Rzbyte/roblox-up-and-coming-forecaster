@@ -34,7 +34,7 @@ from pathlib import Path
 SD_BASE = 0.17          # irreducible spread of a place, in log-rank units
 VOL_MULT = 1.08         # extra spread per sqrt(hour), scaled by measured churn
 TAIL_W = 0.28           # weight of the heavy tail that covers abrupt movers
-MIN_P = 0.002           # below this a named row pays less than leaving the game unnamed
+MIN_P = 0.005           # below this a named row pays less than leaving the game unnamed
 PERSIST_W = 0.20        # share of occupancy history kept in the mixture
 UNNAMED_SCALE = 1.0     # multiplies the fitted future-unseen share
 TILT_DECAY = 0.40       # weight of z(ln(current CCU / weekly peak))

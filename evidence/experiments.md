@@ -28,7 +28,8 @@ Neither was used to choose a parameter.
 | calibrated diffusion | -41.160 | -41.160 | -45.850 | -2.63 | -39.050 | -38.300 |
 | adaptive ensemble (w=0.1) | -44.410 | | | -5.88 | -43.380 | -34.890 |
 | V6: retuned V3 + stay-spike | -38.150 | -38.940 | -45.150 | +0.38 | -38.500 | -33.940 |
-| **V7: V3 + CCU tilt** | **-38.026** | **-38.503** | **-44.710** | **+0.50** | **-37.415** | **-34.004** |
+| V7: V3 + CCU tilt | -38.026 | -38.503 | -44.710 | +0.50 | -37.415 | -34.004 |
+| **this entry: V7, MIN_P 0.005** | **-37.907** | **-38.333** | **-44.502** | **+0.62** | **-37.468** | |
 
 V6 was rejected: better on folds and holdout B, worse on the practice window (-38.502 vs
 -38.276), and its gain came from seven constants retuned together. V7 wins on all four sets and
@@ -80,6 +81,32 @@ pairs. Negative means "feature high, game climbs".
 Tenure fails because survival and expiry already model "old games leave"; slope fails because
 24 h of CCU is mostly the diurnal curve; the horizon-faded tilt and the place shift both lose to
 the flat multiplicative tilt.
+
+## Naming threshold
+
+The scorer pays an unnamed place's spare over the games it did not name there, about 0.0017
+each on this data, so a named row has to clear that to be worth writing. The threshold sits at
+a real interior optimum, not at the edge of the grid:
+
+| MIN_P | folds | practice |
+|---|---|---|
+| 0.0001 | -39.860 | |
+| 0.002 | -38.026 | -37.608 |
+| 0.003 | | -37.578 |
+| **0.005** | **-37.907** | **-37.468** |
+| 0.008 | -38.062 | |
+| 0.012 | -38.225 | |
+
+## Calibration attempts that failed
+
+- Per-place temperature on the place rows: +0.26 on the later folds but -38.41 on the practice
+  window; a single global temperature flips sign between folds (+0.17 at T=1.3) and practice
+  (+0.10 at T=0.9), so the effect is noise.
+- Blending V7 with V3 at weight 0.15-0.50: -38.15 to -38.24 on folds; the tilt only helps at
+  full strength.
+- Widening the candidate pool to 400 games and dropping the recency/rank filters: -37.80 on
+  practice. The extra named rows take more from the unnamed pool than they earn.
+- Per-place spread multipliers measured from observed churn: -38.87 on practice.
 
 ## Unseen-mass calibration
 

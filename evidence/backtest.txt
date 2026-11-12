@@ -1,27 +1,27 @@
 reads=34  2026-10-30T07:36:30.000Z -> 2026-11-07T20:53:19.000Z
-fold  8 2026-11-01T01:11:12.000Z  model  -36.546 (reads 10)  baseline  -46.411  delta  +9.865
-fold  9 2026-11-01T07:33:52.000Z  model  -37.381 (reads 10)  baseline  -47.901  delta +10.520
-fold 10 2026-11-01T15:10:47.000Z  model  -37.282 (reads 10)  baseline  -53.992  delta +16.710
-fold 11 2026-11-01T19:41:36.000Z  model  -38.503 (reads 10)  baseline  -54.177  delta +15.674
-fold 12 2026-11-01T23:37:12.000Z  model  -37.748 (reads 9)  baseline  -46.789  delta  +9.041
-fold 13 2026-11-02T06:05:00.000Z  model  -37.331 (reads 9)  baseline  -42.332  delta  +5.002
-fold 14 2026-11-02T15:54:24.000Z  model  -39.496 (reads 10)  baseline  -48.411  delta  +8.916
-fold 15 2026-11-02T23:31:11.000Z  model  -42.034 (reads 10)  baseline  -50.886  delta  +8.852
-fold 16 2026-11-03T06:48:58.000Z  model  -40.318 (reads 10)  baseline  -52.705  delta +12.388
-fold 17 2026-11-03T15:09:05.000Z  model  -36.773 (reads 10)  baseline  -47.436  delta +10.663
-fold 18 2026-11-03T21:00:40.000Z  model  -39.650 (reads 10)  baseline  -47.343  delta  +7.693
-fold 19 2026-11-04T01:21:54.000Z  model  -42.576 (reads 10)  baseline  -49.591  delta  +7.015
-fold 20 2026-11-04T09:13:45.000Z  model  -39.728 (reads 10)  baseline  -50.269  delta +10.542
-fold 21 2026-11-04T17:18:23.000Z  model  -42.508 (reads 11)  baseline  -50.884  delta  +8.377
-fold 22 2026-11-04T23:40:14.000Z  model  -44.710 (reads 11)  baseline  -55.852  delta +11.141
-fold 23 2026-11-05T06:48:17.000Z  model  -43.583 (reads 10)  baseline  -56.911  delta +13.328
-fold 24 2026-11-05T15:27:58.000Z  model  -41.896 (reads 9)  baseline  -51.967  delta +10.071
-fold 25 2026-11-05T21:59:22.000Z  model  -39.219 (reads 8)  baseline  -52.125  delta +12.906
-fold 26 2026-11-06T02:27:18.000Z  model  -35.743 (reads 7)  baseline  -50.779  delta +15.036
-fold 27 2026-11-06T10:53:52.000Z  model  -31.008 (reads 6)  baseline  -37.713  delta  +6.705
-fold 28 2026-11-06T17:58:53.000Z  model  -30.923 (reads 5)  baseline  -32.918  delta  +1.995
-fold 29 2026-11-06T23:09:52.000Z  model  -29.690 (reads 4)  baseline  -30.008  delta  +0.318
+fold  8 2026-11-01T01:11:12.000Z  model  -36.559 (reads 10)  baseline  -46.411  delta  +9.852
+fold  9 2026-11-01T07:33:52.000Z  model  -37.152 (reads 10)  baseline  -47.901  delta +10.749
+fold 10 2026-11-01T15:10:47.000Z  model  -37.086 (reads 10)  baseline  -53.992  delta +16.906
+fold 11 2026-11-01T19:41:36.000Z  model  -38.333 (reads 10)  baseline  -54.177  delta +15.843
+fold 12 2026-11-01T23:37:12.000Z  model  -37.284 (reads 9)  baseline  -46.789  delta  +9.504
+fold 13 2026-11-02T06:05:00.000Z  model  -37.232 (reads 9)  baseline  -42.332  delta  +5.100
+fold 14 2026-11-02T15:54:24.000Z  model  -39.394 (reads 10)  baseline  -48.411  delta  +9.017
+fold 15 2026-11-02T23:31:11.000Z  model  -42.001 (reads 10)  baseline  -50.886  delta  +8.884
+fold 16 2026-11-03T06:48:58.000Z  model  -40.219 (reads 10)  baseline  -52.705  delta +12.486
+fold 17 2026-11-03T15:09:05.000Z  model  -36.737 (reads 10)  baseline  -47.436  delta +10.699
+fold 18 2026-11-03T21:00:40.000Z  model  -39.540 (reads 10)  baseline  -47.343  delta  +7.803
+fold 19 2026-11-04T01:21:54.000Z  model  -42.460 (reads 10)  baseline  -49.591  delta  +7.132
+fold 20 2026-11-04T09:13:45.000Z  model  -39.610 (reads 10)  baseline  -50.269  delta +10.659
+fold 21 2026-11-04T17:18:23.000Z  model  -42.252 (reads 11)  baseline  -50.884  delta  +8.632
+fold 22 2026-11-04T23:40:14.000Z  model  -44.502 (reads 11)  baseline  -55.852  delta +11.349
+fold 23 2026-11-05T06:48:17.000Z  model  -43.460 (reads 10)  baseline  -56.911  delta +13.451
+fold 24 2026-11-05T15:27:58.000Z  model  -41.811 (reads 9)  baseline  -51.967  delta +10.156
+fold 25 2026-11-05T21:59:22.000Z  model  -39.033 (reads 8)  baseline  -52.125  delta +13.092
+fold 26 2026-11-06T02:27:18.000Z  model  -35.785 (reads 7)  baseline  -50.779  delta +14.994
+fold 27 2026-11-06T10:53:52.000Z  model  -30.867 (reads 6)  baseline  -37.713  delta  +6.846
+fold 28 2026-11-06T17:58:53.000Z  model  -30.868 (reads 5)  baseline  -32.918  delta  +2.050
+fold 29 2026-11-06T23:09:52.000Z  model  -29.736 (reads 4)  baseline  -30.008  delta  +0.272
 fold 30 2026-11-07T02:48:46.000Z  model  -29.944 (reads 3)  baseline  -30.435  delta  +0.491
 
-MEAN over 23 folds: model -38.026  baseline -47.297  delta +9.272
-median model -38.503  best -29.690  worst -44.710
+MEAN over 23 folds: model -37.907  baseline -47.297  delta +9.390
+median model -38.333  best -29.736  worst -44.502

@@ -29,25 +29,28 @@ pool for games that are not in the history yet.
 - **Unseen entrants.** The share of each place held by games outside the candidate pool is
   fitted on up to ten older cuts with a full 72 h follow-up and shrunk toward a prior (0.30 to
   0.19 by place). The complement stays unassigned on purpose.
-- **Filtering.** A row below `p = 0.002` is dropped: the unnamed pool pays about 0.0017 per
+- **Filtering.** A row below `p = 0.005` is dropped: the unnamed pool pays about 0.0017 per
   game, so a token guess is worth less than silence.
 
 ## Scores (log score, higher is better)
 
-| model | practice window (10 reads) | 23 walk-forward folds | holdout A | holdout B |
-|---|---|---|---|---|
-| house baseline, rebuilt locally | -42.963 | -47.297 | | |
-| V3 (previous entry) | -38.276 | -38.530 | -38.067 | -34.839 |
-| **this entry** | **-37.608** | **-38.026** | **-37.415** | **-34.004** |
+| model | practice window (10 reads) | 23 walk-forward folds |
+|---|---|---|
+| house baseline, rebuilt locally | -42.963 | -47.297 |
+| V3 (previous entry) | -38.276 | -38.530 |
+| V7, before the naming threshold | -37.608 | -38.026 |
+| **this entry** | **-37.468** | **-37.907** |
 
-Folds of this entry: median -38.503, best -29.690, worst -44.710; top-10 hits 7.0 per read
+Folds of this entry: median -38.333, best -29.736, worst -44.502; top-10 hits 7.0 per read
 (V3: 6.4). The published house baseline on the practice window is -43.512039; the local rebuild
 lands within 0.55 with identical hit counts, which is the noise floor of the scorer
 reconstruction.
 
 Rejected on evidence: rank-transition Markov (-45.90 folds), place-Markov (-43.40), calibrated
 Gaussian diffusion (-41.16), adaptive ensemble (-44.41), retuned V3 with a stay-spike (-38.15
-folds but -38.50 practice), and a 24 h-sliced unseen share (-38.145 folds, -37.812 practice).
+folds but -38.50 practice), a 24 h-sliced unseen share (-38.145 folds, -37.812 practice), a
+V7/V3 blend (-38.15 to -38.24), per-place temperature (-38.41 practice), a wider candidate pool
+(-37.80 practice) and per-place churn spreads (-38.87 practice).
 Every candidate and ablation is in `evidence/experiments.md`.
 
 ## Running it
